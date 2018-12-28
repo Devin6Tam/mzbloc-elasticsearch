@@ -8,22 +8,23 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+
 /**
  * Created by tanxw on 2018/11/21.
  */
-@Service(interfaceClass = ClienteService.class)
+@Service
 public class ClienteServiceImpl implements ClienteService {
 
     @Autowired
     private ClienteRepository clienteRepository;
 
-    private static final Logger LOG = LoggerFactory.getLogger(ClienteServiceImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(ClienteServiceImpl.class);
 
     @Override
     public ClienteEntity findCliente(String id)
     {
         ClienteEntity cliente = clienteRepository.findOne(id);
-        LOG.info(" get cliente by id {} is {}", id, cliente);
+        logger.info(" get cliente by id {} is {}", id, cliente);
         return cliente;
     }
 
