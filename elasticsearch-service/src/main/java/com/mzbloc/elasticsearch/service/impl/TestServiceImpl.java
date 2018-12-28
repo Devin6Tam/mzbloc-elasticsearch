@@ -1,8 +1,7 @@
 package com.mzbloc.elasticsearch.service.impl;
 
-//import com.alibaba.dubbo.config.annotation.Service;
+import com.alibaba.dubbo.config.annotation.Service;
 import com.mzbloc.elasticsearch.service.TestService;
-import org.springframework.stereotype.Service;
 
 
 /**
