@@ -7,7 +7,7 @@ import com.mzbloc.elasticsearch.service.TestService;
 /**
  * Created by tanxw on 2018/12/26.
  */
-@Service
+@Service(interfaceClass = TestService.class)
 public class TestServiceImpl implements TestService{
     @Override
     public String say(){

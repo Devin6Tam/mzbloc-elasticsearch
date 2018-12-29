@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * Created by tanxw on 2018/11/21.
  */
-@Service
+@Service(interfaceClass = ClienteService.class)
 public class ClienteServiceImpl implements ClienteService {
 
     @Autowired
